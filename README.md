@@ -6,7 +6,7 @@ LegitCal is just a simple calculator. :p
 
 Also, this is still in progress!  
 
-Link to [legitCal](https://robertvunabandi.github.io/legitCal/)
+Link: [legitCal](https://robertvunabandi.github.io/legitCal/)
 
 ##Reason I made LegitCal
 
