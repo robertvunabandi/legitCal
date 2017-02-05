@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>legitCal | The Way to Compute</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Overpass+Mono:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+<div class="container noselect" id="intro">
+	<div class="container-fluid" id="intro-init">
+		<div class="col-xs-12 col-md-6 col-lg-6" id="intro-part-1">
+			<div id="intro-part-1-box">
+				<div>
+					<h1>LegitCal</h1>
+					<h2 class="legitCal">The Way to Compute</h2>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-6 col-lg-6" id="intro-part-2">
+			<div id="intro-part-2-content">
+				<h1>Welcome to <span class="legitCal-2">LegitCal</span></h1>
+				<h2>Calculations Made Easy</h2>
+				<p>NO MORE need for deficient calculators. NO MORE need to suffer. Computations are the way of the 21st century, and <span class="legitCal">LegitCal</span> has risen just at the right time.</p>
+				<h2>User Friendly</h2>
+				<p><span class="legitCal">LegitCal</span> has reinvented calculating to fit the need of every customer with its integrated, synchronized, and responsive keyboard usage. NO MORE need to use a mouse of track-pad.</p>
+				<h2>Exquisite Design</h2>
+				<p>In fact, <span class="legitCal">LegitCal</span> feels just like typing on a real, physical calculator.<br>
+				Now, get immersed into the computational experience.</p>
+				<h1 id="get-started">Get Started</h1>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="navbar">
+	<span id="navbar-title" class="noselect">LegitCal</span>
+	<!-- <li>report a problem</li> -->
+</div>
+<div id="main" class="container">
+	<div class="main-separator col-xs-12 col-md-5 col-lg-4 col-md-offset-1 col-lg-offset-2">
+		<div id="calculator" class="col-xs-12 col-md-12 col-lg-12">
+			<div id="calculator-special" class="col-xs-2 col-md-2 col-lg-2 noselect">
+				<br><br>
+				<div class="button" id="b-pi">&Pi;</div>
+				<div class="button" id="b-e">e</div>
+				<div class="button" id="b-golden-ratio">&Phi;</div>
+				<div class="button" id="b-tau">&tau;</div>
+			</div>
+			<div id="calculator-characters" class="col-xs-10 col-md-10 col-lg-10 noselect">
+				<div class="button-separator col-xs-3 col-md-3 col-lg-3">
+					<div class="button" id="b-clear">AC</div>
+					<div class="button" id="b-7">7</div>
+					<div class="button" id="b-4">4</div>
+					<div class="button" id="b-1">1</div>
+					<div class="button" id="b-plus-or-minus">&plusmn;</div>
+				</div>
+				<div class="button-separator col-xs-3 col-md-3 col-lg-3">
+					<div class="button" id="b-parenthesis-open">(</div>
+					<div class="button" id="b-8">8</div>
+					<div class="button" id="b-5">5</div>
+					<div class="button" id="b-2">2</div>
+					<div class="button" id="b-0">0</div>
+				</div>
+				<div class="button-separator col-xs-3 col-md-3 col-lg-3">
+					<div class="button" id="b-parenthesis-close">)</div>
+					<div class="button" id="b-9">9</div>
+					<div class="button" id="b-6">6</div>
+					<div class="button" id="b-3">3</div>
+					<div class="button" id="b-point">&middot;</div>
+				</div>
+				<div class="button-separator col-xs-3 col-md-3 col-lg-3">
+					<div class="button" id="b-divide">&divide;</div>
+					<div class="button" id="b-multiply">&Cross;</div>
+					<div class="button" id="b-minus">-</div>
+					<div class="button" id="b-plus">+</div>
+					<div class="button" id="b-equal">=</div>
+				</div>
+			</div>
+			<!-- Options: 1,2,3,4,5,6,7,8,9,0,.,+,-,/,x,(,),=,^, +-, -->
+		</div>
+	</div>
+	<div class="main-separator col-xs-12 col-md-6 col-lg-4">
+		<div id="calculator-log" class="">
+			<input type="text" name="current-typing" id="current-typing" disabled=""><br>
+			<div id="current-typing-history"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

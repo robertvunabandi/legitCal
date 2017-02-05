@@ -1,0 +1,161 @@
+/*
+DARK rgba(22,65,52,1)
+MID rgba(61,184,148,1)
+LIGHT rgba(213,241,233,1)
+YELLOW rgba(177,177,27,1)
+L.YELLOW rgba(231,231,95,1)
+ORANGE rgba(255,121,7,1)
+*/
+* {font-family: 'Overpass Mono', monospace; font-size: 2rem;}
+*:active,*:focus {outline: none;}
+body {background-color: rgba(213,241,233,1);}
+.legitCal {
+	text-decoration: underline;
+}
+/*INTRO*/
+#intro {
+	z-index: 10; background-color: rgba(213,241,233,1);
+	position: absolute;
+	width: 100%; min-height: 102%;
+	padding: 0rem;
+	display: flex; align-items: center; justify-content: center;
+}
+#intro-init {
+	padding: 0rem !important; margin: 0rem !important;
+}
+#intro-part-1-box {
+	display: flex; align-items: center; justify-content: center;
+}
+#intro-part-1, #intro-part-2 {margin: 0rem; height: 100%; text-align: center;}
+#intro-part-1 {
+	position: relative; padding: 2rem; top: 50%;
+	display: flex; align-items: center; justify-content: center; 
+}
+#intro-part-1 h1 {
+	font-weight: 700; font-size: 7rem; 
+	line-height: 6rem;
+}
+#intro-part-1 h2 {
+	font-size: 2.5rem; font-style: italic; 
+	line-height: 2rem; color: rgba(255,121,7,1);
+}
+#intro-part-2 {
+	color: white; padding: 2rem;
+}
+#intro-part-2-content {background-color: rgba(22,65,52,1); padding: 2rem;}
+#intro-part-2 h1 {font-weight: 700; font-size: 3.5rem;}
+#intro-part-2 h1 .legitCal-2 {text-decoration: underline; font-size: 3.5rem !important;}
+#intro-part-2 h2 { 
+	font-weight: 700; font-size: 2.5rem; 
+	font-style: italic; color: rgba(231,231,95,1);
+}
+#intro-part-2 p {font-size: 1.5rem;}
+#get-started {
+	padding: 1rem; display: block;
+	color: rgba(231,231,95,1);
+	background-color: rgba(255,121,7,1);
+	transition: border 300ms, background 300ms, color 300ms;
+}
+#get-started:hover {
+	border-left: 15rem solid rgba(231,231,95,1);
+	transition: border 500ms;
+}
+#get-started:focus, #get-started:active {
+	border-left: 15rem solid rgba(255,255,255,1);
+	color: white;
+}
+/*MAIN SITE*/
+#navbar {
+	display: block; text-align: center; width: 100%; 
+	position: relative; font-weight: 700; 
+	background-color: rgba(22,65,52,1); padding: 1rem;
+}
+#navbar-title {color: white; font-size: 5rem;}
+#navbar li {
+	display: block; position: absolute; right: 7rem; top: 1rem; 
+	height: 4rem; line-height: 4rem; padding: 0rem 1rem; margin: 0;
+	background-color: rgba(231,231,95,1); 
+	transition: background-color 20ms;
+}
+#navbar li:hover {background-color: rgba(213,241,233,1);}
+#navbar li:focus, #navbar li:active {background-color: white;}
+
+#main {
+	margin-top: 1rem;
+}
+.main-separator {
+	padding: 0.5rem;
+}
+#calculator {padding: 1rem; background-color: rgba(231,231,95,1); border-bottom: 15px solid rgba(22,65,52,0.7);}
+#calculator-special {margin: 0; padding: 0 0.5rem; text-align: center;}
+#calculator-characters {margin: 0; padding: 0; text-align: center;}
+#calculator-characters .button-separator {padding: 0.5rem; text-align: center;}
+.button {display: block;text-align:center;background-color:rgba(22,65,52,0.1);
+	border-bottom: 0.5rem solid rgba(22,65,52,0.5); padding: 2rem 0rem;
+	transition: background-color 10ms; font-size: 2.5rem; font-weight: 700;
+}
+.button + .button {margin-top: 1.0rem;}
+.button:hover {background-color: rgba(213,241,233,0.8);}
+.button:focus, .button:active {
+	background-color: rgba(213,241,233,0.9);
+	border-bottom: 0.2rem solid rgba(22,65,52,0.5); padding: 2.15rem 0rem;
+}
+/*SPECIAL STYLING ON BUTTONS*/
+#b-pi, #b-e, #b-golden-ratio, #b-tau {
+	background-color: rgba(22,65,52,0.8);
+	border-bottom: 0.5rem solid rgba(0,0,0,0.3);
+	color: white;
+}
+#b-pi:hover, #b-e:hover, #b-golden-ratio:hover, #b-tau:hover {
+	background-color: rgba(22,65,52,1);
+}
+#b-pi:focus, #b-e:focus, #b-golden-ratio:focus, #b-tau:focus, #b-pi:active, #b-e:active, #b-golden-ratio:active, #b-tau:active {
+	border-bottom: 0.2rem solid rgba(0,0,0,1);
+}
+#b-parenthesis-open, #b-parenthesis-close, #b-clear, #b-plus-or-minus {
+	background-color:rgba(22,65,52,0.4);
+}
+#b-parenthesis-open:hover, #b-parenthesis-close:hover, #b-clear:hover , #b-plus-or-minus:hover {
+	background-color: rgba(213,241,233,1);
+}
+#b-equal {
+	background-color: rgba(255,255,255,0.85);
+}
+#b-divide, #b-multiply, #b-minus, #b-plus {
+	background-color: rgba(255,121,7,0.85);
+}
+#b-equal:hover, #b-divide:hover, #b-multiply:hover, #b-minus:hover, #b-plus:hover {
+	background-color: rgba(213,241,233,1);
+}
+
+/*CALCULATOR LOG*/
+#calculator-log {
+	background-color: rgba(22,65,52,0.6); padding: 0.5rem;
+}
+#current-typing {
+	width: 100%; font-size: 3rem; text-align: right; border: none;
+	box-shadow: inset 0px 0px 1rem rgba(10,30,24,1);
+	background-color: rgba(22,65,52,0.75); color: rgba(213,241,233,1);
+	padding: 0rem 1rem;
+	border-bottom: 2px solid rgba(255,255,255,0.5);
+}
+#current-typing-history {
+	text-align: right; color: white;
+	min-height: 20rem; margin-top: 0.5rem;
+	border-top: 2px solid rgba(231,231,95,0.6);
+	border-bottom: 2px solid rgba(231,231,95,0.6);
+	background-color: rgba(22,65,52,0.6); padding: 0.5rem;
+}
+
+/*OTHER STUFFS*/
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+            cursor:default;
+}
+
+
