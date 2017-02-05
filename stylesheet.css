@@ -161,7 +161,7 @@ body {background-color: rgba(213,241,233,1);}
 #link-to-my-github {
 	background-color: rgba(22,65,52,0.4);
 	z-index: 4;
-	position: absolute; padding: 0rem 1rem;
+	position: fixed; padding: 0rem 1rem;
 	bottom: 1rem; right: 1rem;
 	transition: color 300ms, background-color 300ms;
 }
